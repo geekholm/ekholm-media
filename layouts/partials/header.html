@@ -4,15 +4,20 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title> Snipcart integration in Hugo! </title>
+  <title> ekholm.media </title>
   
   <link id="snipcart-theme" type="text/css" href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/styles.css">
+    
+  {{ $sass := resources.Get "sass/main.scss" }}
+  {{ $style := $sass | resources.ToCSS }}
+
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
+
     <nav>
       <div class="nav-wrapper">
         <a href="#" class="brand-logo">Star Trek shop</a>
@@ -25,4 +30,5 @@
         </ul>
       </div>
     </nav>
+  
   </div>
