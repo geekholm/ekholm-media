@@ -1,3 +1,3 @@
 # This is a test
 
-testing how to make a ecommerce site using Hugo + Netlify + Snipcart
+testing how to make an ecommerce site using Hugo + Netlify + Snipcart
